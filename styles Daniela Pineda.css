@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    /*Configurar la fuente o tamaño de texto de toda la pagina*/
+    margin: 0;
+    padding: 0;
+    /*Margen y padding: Definir margenes y relleno que afectan la distribución de los elementos*/
+}
+
+header {
+    background-color: #4CAF50;
+    /*Establecer fondo: para darle un color o imagen de fondo distintivo*/
+    color: white;
+    /*Se usa para establecr el color del texto dentro del elemento*/
+    padding: 10px 0;
+    /*Aplica un 10px de espacio interno en todos los lados del header*/
+    text-align: center;
+    /*Se usa para alinear el texto horizontalmente dentro del contenedor*/
+}
+
+nav ul {
+    list-style-type: none;
+    /*Elimina el marcador de lista sin viñeta*/
+    padding: 0;
+    /*Se usa para agregar espacio interno dentro de la lista de navegacion, se encuentre entre el contenido de los elementos y sus bordes*/
+}
+
+nav ul li {
+    display: inline;
+    /*Los elementos de la lista se comporten como enlaces en linea, creando menus horizontales simples y limpios*/
+    margin: 0 15px;
+    /*Ayuda a crear un menu de navegacion bien estructurado y espaciado, facil de leer y visualmente agradable*/
+}
+
+nav ul li a {
+    color: white;
+    /**/
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.columna {
+    flex: 1; /* Cada columna tomará el mismo espacio */
+    margin: 0 10px; /* Espacio entre columnas */
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .columnas {
+        flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
+    }
+
+    .columna {
+        margin: 10px 0; /* Espacio vertical en pantallas pequeñas */
+    }
+}
